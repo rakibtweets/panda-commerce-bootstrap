@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <!-- Bootstrap Stylesheet -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <!-- css link -->
+  <!-- custom css link -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -21,7 +21,7 @@
   <header>
 
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#">
           <img src="images/logo.png" alt="" width="160px" height="40px">
@@ -32,7 +32,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <form class="d-flex m-auto">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <input class="form-control ms-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Search</button>
           </form>
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -40,13 +40,13 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Product</a>
+              <a class="nav-link" href="#shoes">Shoes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About us</a>
+              <a class="nav-link" href="#backpack">Backpack</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">contact Us</a>
+              <a class="nav-link" href="#email-contact">contact Us</a>
             </li>
           </ul>
         </div>
@@ -58,13 +58,13 @@
       <div id="carouselExampleControls" class="carousel slide container my-5" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active rounded">
-            <div class="row d-flex align-items-center bg-info bg-gradient p-5 ">
+            <div class="row d-flex align-items-center slider-bg bg-gradient px-3 ">
               <div class="col-lg-7">
                 <h1>Mi LED TV 4A PRO 32</h1>
                 <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
                   duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
                 <h2 class=" text-danger fw-bold">$1200</h2>
-                <button type="submit" class=" btn btn-danger">Buy Now</button>
+                <button type="submit" class=" btn btn-color btn-color text-white fw-bold px-3">Buy Now</button>
               </div>
               <div class="col-lg-5">
                 <img src="images/banner-images/tv.png" class="d-block w-100" alt="...">
@@ -72,13 +72,13 @@
             </div>
           </div>
           <div class="carousel-item">
-            <div class="row d-flex align-items-center bg-info bg-gradient p-5 ">
+            <div class="row d-flex align-items-center slider-bg  bg-gradient px-3 ">
               <div class="col-lg-7">
                 <h1>Cool Dude Headphone</h1>
                 <p>This is best headphone in the world for people who just want to waste time in front of funky world.
                 </p>
                 <h2 class=" text-danger fw-bold">$420</h2>
-                <button type="submit" class=" btn btn-danger">Buy Now</button>
+                <button type="submit" class=" btn btn-color btn-color text-white fw-bold px-3">Buy Now</button>
               </div>
               <div class="col-lg-5">
                 <img src="images/banner-images/headphone.png" class="d-block w-100" alt="...">
@@ -86,13 +86,13 @@
             </div>
           </div>
           <div class="carousel-item">
-            <div class="row d-flex align-items-center bg-info bg-gradient p-5 ">
+            <div class="row d-flex align-items-center slider-bg bg-gradient px-3 ">
               <div class="col-lg-7">
                 <h1>X-Box for your living room</h1>
                 <p>This is the best x-box in the world for people who just want to waste time in front of fake sports.
                 </p>
                 <h2 class=" text-danger fw-bold">$600</h2>
-                <button type="submit" class=" btn btn-danger">Buy Now</button>
+                <button type="submit" class=" btn btn-color btn-color text-white fw-bold px-3">Buy Now</button>
               </div>
               <div class="col-lg-5">
                 <img src="images/banner-images/xbox.png" class="d-block w-100" alt="...">
@@ -118,23 +118,23 @@
 
   <main>
     <!-- Shoes categories  -->
-    <section class="container my-5">
+    <section class="container my-5 catagories">
       <div class=" overflow-hidden">
         <div class="row gy-5">
           <div class="col-lg-4 col-md-6 col-12">
-            <div class="p-3 border rounded-3 bg-danger d-flex align-items-center justify-content-between">
+            <div class="p-3 border rounded-3 watch-cat-bg d-flex align-items-center justify-content-between">
               <h2 class=" text-white">Watch</h2>
               <img src="images/categories/watch.png" alt="" style="width: 70px; height: 85px;">
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-12">
-            <div class="p-3 border rounded-3 bg-primary d-flex align-items-center justify-content-between">
+            <div class="p-3 border rounded-3 shoes-cat-bg d-flex align-items-center justify-content-between">
               <h2 class=" text-white">shoes</h2>
               <img src="images/categories/shoes.png" alt="" style="width: 70px; height: 85px;">
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-12">
-            <div class="p-3 border rounded-3 bg-warning d-flex align-items-center justify-content-between">
+            <div class="p-3 border rounded-3 bags-cat-bg d-flex align-items-center justify-content-between">
               <h2 class=" text-white">Bags</h2>
               <img src="images/categories/bag.png" alt="" style="width: 70px; height: 85px;">
             </div>
@@ -145,7 +145,7 @@
 
     <!-- Shoes Cards -->
 
-    <section class="container my-5">
+    <section class="container my-5" id="shoes">
       <h1>Shoes</h1>
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gx-4 my-5">
         <div class="col">
@@ -158,7 +158,7 @@
             <div class="m-3">
               <div class="d-flex justify-content-between align-items-center">
                 <h2 class="fw-bold">$1250</h2>
-                <button type="submit" class=" btn btn-danger">Buy Now</button>
+                <button type="submit" class=" btn btn-color btn-color text-white fw-bold px-3">Buy Now</button>
               </div>
             </div>
           </div>
@@ -173,7 +173,8 @@
             <div class=" m-3">
               <div class="d-flex justify-content-between align-items-center">
                 <h2 class="fw-bold">$1250</h2>
-                <button type="submit" class=" btn btn-danger">Buy Now</button>
+                <button type="submit" class=" btn btn-color btn-color text-white fw-bold px-3 text-white">Buy
+                  Now</button>
               </div>
             </div>
           </div>
@@ -188,7 +189,7 @@
             <div class=" m-3">
               <div class="d-flex justify-content-between align-items-center">
                 <h2 class="fw-bold">$1250</h2>
-                <button type="submit" class=" btn btn-danger">Buy Now</button>
+                <button type="submit" class=" btn btn-color btn-color text-white fw-bold px-3">Buy Now</button>
               </div>
             </div>
           </div>
@@ -197,7 +198,7 @@
     </section>
 
     <!-- BackPack Cards -->
-    <section class="container my-5">
+    <section class="container my-5" id="backpack">
       <h1>BackPack</h1>
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gx-4 my-5">
         <div class="col">
@@ -210,7 +211,7 @@
             <div class="m-3">
               <div class="d-flex justify-content-between align-items-center">
                 <h2 class="fw-bold">$1250</h2>
-                <button type="submit" class=" btn btn-danger">Buy Now</button>
+                <button type="submit" class=" btn btn-color btn-color text-white fw-bold px-3">Buy Now</button>
               </div>
             </div>
           </div>
@@ -225,7 +226,7 @@
             <div class=" m-3">
               <div class="d-flex justify-content-between align-items-center">
                 <h2 class="fw-bold">$1250</h2>
-                <button type="submit" class=" btn btn-danger">Buy Now</button>
+                <button type="submit" class=" btn btn-color btn-color text-white fw-bold px-3">Buy Now</button>
               </div>
             </div>
           </div>
@@ -240,7 +241,7 @@
             <div class=" m-3">
               <div class="d-flex justify-content-between align-items-center">
                 <h2 class="fw-bold">$1250</h2>
-                <button type="submit" class=" btn btn-danger">Buy Now</button>
+                <button type="submit" class=" btn btn-color btn-color text-white fw-bold px-3">Buy Now</button>
               </div>
             </div>
           </div>
@@ -248,7 +249,25 @@
       </div>
     </section>
 
+    <!-- Contact Section -->
+
+    <section class="container " id="email-contact">
+      <div class=" contact-bg  px-3 d-flex flex-column justify-content-center align-items-center "
+        style="height:300px;">
+        <h1>LET'S STAY IN TOUCH</h1>
+        <p>Get updates on sales specials and more</p>
+        <div class=" d-flex flex-column flex-md-row justify-content-center">
+          <input class="form-control  type=" email" name="emai" id="email" placeholder="Enter Your Email">
+          <button class="btn btn-color btn-color text-white fw-bold  px-4">Send</button>
+        </div>
+      </div>
+    </section>
+
   </main>
+
+  <footer class="mt-5 text-center">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, hic!</p>
+  </footer>
 
 
   <script src="js/bootstrap.bundle.min.js"></script>
